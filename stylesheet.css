@@ -1,0 +1,298 @@
+header{
+    border-bottom:3px solid rgb(12, 12, 12);
+    background-color: #fff;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:10px;
+}
+
+.container{
+    width:80%;
+    margin:0 auto;
+    padding:0 100px;
+}
+
+.header{
+    color: rgb(255, 255, 255);
+
+}
+
+.headers{
+    height:66px;
+    padding:20px 0;
+    display:flex;
+}
+
+.menu-icon {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    display:none;
+  }
+  
+.header-label a{
+    padding:0 15px;
+    color: rgb(102, 94, 94);
+    font-size:12px;
+    border-right:1px solid rgb(102,94,94)
+}
+
+.header-label a:hover{
+    text-decoration:none;
+}
+
+
+.top-wrapper{
+    margin-top:69px;
+    height:440px;
+    background-image: url(../img/header.png);
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+}
+.top-title{
+    padding-top:82px;
+}
+.top-btn a{
+    color:#fff;
+    display:inline-block;
+    margin-top:20px;
+    padding:5px 15px;
+    border:1px solid #fff;
+}
+
+.top-btn a{
+    text-decoration:none;
+}
+
+.upper-app-container{
+    width:85%;
+    height:900px;
+    margin:0 auto;
+    padding:0 100px;
+    display:flex;
+}
+
+.upper-app-img{
+    margin-top:100px;
+    padding-right:50px;
+}
+
+.upper-app-txt{
+    margin-top:140px;
+    padding-left:50px;
+}
+
+.app-container{
+    width:70%;
+    height:545px;
+    margin:0 auto;
+    padding:0 100px;
+    display:flex;
+}
+
+.app-txt{
+    padding:50px;
+}
+
+.downer-app-container{
+    width:85%;
+    height:700px;
+    margin:0 auto;
+    padding:0 100px;
+    display:flex;
+}
+
+.downer-app-img{
+    margin-top:100px;
+    padding-right:50px;
+}
+
+.downer-app-txt{
+    margin-top:140px;
+    padding:50px 50px 0 120px;
+}
+
+footer{
+    height:250px;
+    background-color: #3B3B3B;
+}
+
+.footer-container{
+    width:80%;
+    margin:0 auto;
+    padding:25px 185px 0 185px;
+}
+
+.site-map a{
+    color:#807b7b;
+    font-size:13px;
+}
+
+.site-map a{
+    text-decoration:none;
+}
+
+.sns{
+    padding:18px 0;
+}
+
+.sns a{
+    font-size:28px;
+    color:#6A6A6A;
+    display:inline-block;
+    padding-right:15px;
+}
+
+.sns  :hover{
+    text-decoration:none;
+
+}
+
+.corporation p{
+    font-size:12px;
+    color:#6A6A6A;
+}
+
+@media(max-width:1024px){ /*タブレット用に設定。*/
+    .headers{
+        display:block; /*ロゴとメニューバーを分離させるために、flexboxを解除*/
+    }
+    .header-logo{
+        float:left; /*ロゴはfloatで左寄せ*/
+    }
+    .header-label{
+        display:none;
+    }
+    .menu-icon{
+        display:block;
+        float:right; /*メニューバーはfloatで右寄せ*/
+      }
+    h1{
+        font-size:2em;
+    }
+    .application{
+        flex-wrap:wrap;
+    }
+
+    .upper-app-container{
+        flex-wrap:wrap;
+        margin-bottom:250px;
+    }
+    .upper-app-img{
+        flex:auto;
+        width:100%;
+    }
+    .upper-app-txt{
+        flex:auto;
+        width:100%;
+        margin-top:0px;
+        padding:0 65px;
+    }
+    .app-container{
+        flex-wrap:wrap;
+        margin-bottom:300px;
+
+    }
+    .app-txt{
+        flex:auto;
+        width:100%;
+        padding:50px 0 0 0;
+    }
+    .app-img{
+        flex:auto;
+        width:100%;
+    }
+    .downer-app-container{
+        flex-wrap:wrap;
+        margin-bottom:100px;
+        margin-top:0px;
+    }
+    .downer-app-img{
+        flex:auto;
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+    .downer-app-txt{
+        flex:auto;
+        width:100%;
+        margin-top:0px;
+        padding:50px 70px 0 70px;
+    }
+    footer{
+        height:300px;
+    }
+}
+
+@media(max-width:768px){
+    footer{
+        height:400px;
+    }
+}
+
+@media(max-width:425px){ /*スマホ用に設定。iPad（768px）未満と定義する。*/
+    h1{
+        font-size:1.6em;
+    }
+    .container{
+        width:100%;
+        padding:0 10px;
+    }
+
+    .upper-app-container{
+        width:100%;
+        padding:10px;
+        margin:0
+
+    }
+    .upper-app-img{
+        padding:0;
+        margin:0;
+        text-align:center;
+    }
+    .upper-app-txt{
+        padding:0 10px;
+    }
+    .upper-app-img img{
+        width:300px;
+    }
+
+    .app-container{
+        width:100%;
+        padding:10px;
+    }
+
+    .app-img{
+        text-align:center;
+    }
+    .app-txt{
+        padding:0 10px;
+    }
+
+    .app-img img{
+        width:300px;
+    }
+    .downer-app-container{
+        width:100%;
+        padding:10px;
+    }
+    .downer-app-img{
+        text-align:center;
+    }
+    .downer-app-img img{
+        width:300px;
+    }
+    .downer-app-txt{
+        padding:0 10px;
+    }
+    footer{
+        height:350px;
+    }
+    .footer-container{
+        width:100%;
+        padding:10px;
+
+    }
+}

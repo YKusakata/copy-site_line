@@ -46,7 +46,7 @@ header{
 .top-wrapper{
     margin-top:69px;
     height:440px;
-    background-image: url(https://github.com/YKusakata/copy-site_line/blob/master/header.png?raw=true);
+    background-image: url("https://github.com/YKusakata/copy-site_line/blob/master/header.png?raw=true");
     background-size:cover;
     background-position:center;
     color:#fff;
